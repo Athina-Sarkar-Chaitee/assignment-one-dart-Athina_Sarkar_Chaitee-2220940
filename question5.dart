@@ -7,7 +7,7 @@
 mixin Payable {
   double calculateSalary(double baseSalary, double bonus) {
     // TODO: Calculate total salary (base + bonus)
-    return 0.0; // Placeholder - replace with actual implementation
+    return 0; // Placeholder - replace with actual implementation
   }
   
   void processPayment(double amount) {
@@ -21,7 +21,7 @@ mixin Payable {
 mixin Reportable {
   String generateReport(String employeeName, String department) {
     // TODO: Generate report
-    return ""; // Placeholder - replace with actual implementation
+    return ''; // Placeholder - replace with actual implementation
   }
 }
 
@@ -30,19 +30,19 @@ mixin Reportable {
 //    - Abstract method: String getJobTitle()
 //    - Abstract method: double getBaseSalary()
 abstract class Employee {
+  
+  Employee(this.name, this.id, this.department);
   String name;
   String id;
   String department;
-  
-  Employee(this.name, this.id, this.department);
   
   String getJobTitle();
   double getBaseSalary();
   
   void displayInfo() {
-    print("$name (ID: $id, Department: $department)");
-    print("Job Title: ${getJobTitle()}");
-    print("Base Salary: ${getBaseSalary()}");
+    print('$name (ID: $id, Department: $department)');
+    print('Job Title: ${getJobTitle()}');
+    print('Base Salary: ${getBaseSalary()}');
   }
 }
 
@@ -51,20 +51,20 @@ abstract class Employee {
 //      - Additional property: int teamSize
 //      - Override required methods
 class Manager extends Employee with Payable, Reportable {
-  int teamSize;
   
-  Manager(String name, String id, String department, this.teamSize) : super(name, id, department);
+  Manager(super.name, super.id, super.department, this.teamSize);
+  int teamSize;
   
   @override
   String getJobTitle() {
     // TODO: Return manager job title
-    return ""; // Placeholder - replace with actual implementation
+    return ''; // Placeholder - replace with actual implementation
   }
   
   @override
   double getBaseSalary() {
     // TODO: Return manager base salary
-    return 0.0; // Placeholder - replace with actual implementation
+    return 0; // Placeholder - replace with actual implementation
   }
   
   @override
@@ -78,20 +78,20 @@ class Manager extends Employee with Payable, Reportable {
 //      - Additional property: String programmingLanguage
 //      - Override required methods
 class Developer extends Employee with Payable {
-  String programmingLanguage;
   
-  Developer(String name, String id, String department, this.programmingLanguage) : super(name, id, department);
+  Developer(super.name, super.id, super.department, this.programmingLanguage);
+  String programmingLanguage;
   
   @override
   String getJobTitle() {
     // TODO: Return developer job title
-    return ""; // Placeholder - replace with actual implementation
+    return ''; // Placeholder - replace with actual implementation
   }
   
   @override
   double getBaseSalary() {
     // TODO: Return developer base salary
-    return 0.0; // Placeholder - replace with actual implementation
+    return 0; // Placeholder - replace with actual implementation
   }
   
   @override

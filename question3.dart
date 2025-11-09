@@ -2,18 +2,18 @@
 // TODO: Complete the following requirements:
 
 // Create a BankAccount class with the following specifications:
-class BankAccount {
-  // 1. Properties:
-  String accountNumber;
-  String accountHolder;
-  double balance;
-  String accountType; // Savings/Checking
+class BankAccount { // Savings/Checking
   
   // 2. Constructor:
   //    - Initialize all properties
   //    - Set initial balance to 0.0
   // TODO: Implement the constructor
   BankAccount(this.accountNumber, this.accountHolder, this.accountType) : balance = 0.0;
+  // 1. Properties:
+  String accountNumber;
+  String accountHolder;
+  double balance;
+  String accountType;
   
   // 3. Methods:
   //    - deposit(double amount): Add money to account
@@ -33,7 +33,7 @@ class BankAccount {
   // TODO: Implement the getBalance method
   double getBalance() {
     // TODO: Return the current balance
-    return 0.0; // TODO: Replace with actual balance
+    return 0; // TODO: Replace with actual balance
   }
   
   //    - displayAccountInfo(): Show account details
@@ -51,18 +51,18 @@ void main() {
   //    - Handling insufficient funds scenario
   
   // TODO: Create 3 bank accounts
-  BankAccount account1 = BankAccount("12345", "Alice", "Savings");
-  BankAccount account2 = BankAccount("67890", "Bob", "Checking");
-  BankAccount account3 = BankAccount("11111", "Charlie", "Savings");
+  final var account1 = BankAccount('12345', 'Alice', 'Savings');
+  final account2 = BankAccount('67890', 'Bob', 'Checking');
+  final account3 = BankAccount('11111', 'Charlie', 'Savings');
   
   // TODO: Demonstrate depositing money
-  account1.deposit(1000.0);
-  account2.deposit(500.0);
-  account3.deposit(2000.0);
+  account1.deposit(1000);
+  account2.deposit(500);
+  account3.deposit(2000);
   
   // TODO: Demonstrate withdrawing money
-  account1.withdraw(200.0);
-  account2.withdraw(100.0);
+  account1.withdraw(200);
+  account2.withdraw(100);
   
   // TODO: Display account information
   account1.displayAccountInfo();
@@ -70,5 +70,5 @@ void main() {
   account3.displayAccountInfo();
   
   // TODO: Demonstrate insufficient funds scenario
-  account2.withdraw(1000.0); // This should show insufficient funds message
+  account2.withdraw(1000); // This should show insufficient funds message
 }
