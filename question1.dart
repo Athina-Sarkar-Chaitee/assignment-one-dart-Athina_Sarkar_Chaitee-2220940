@@ -1,7 +1,7 @@
 // Question 1: Basic Data Types & Functions (Difficulty: 1/5) ⭐
 // TODO: Complete the following requirements:
 
-// 1. Create variables of different data types: String, int, double, bool
+// 1.Create variables of different data types: String, int, double, bool
 // TODO: Add your variables here
 String name = 'Athina Sarkar'; // TODO: Initialize with your name
 int age = 23; // TODO: Initialize with your age
@@ -9,6 +9,7 @@ double height = 5.5; // TODO: Initialize with your height
 bool isStudent = true; // TODO: Initialize with true or false
 
 // 2. Write a function called calculateBMI that takes weight (double) and height (double) as parameters and returns the BMI as a double
+
 // TODO: Implement the calculateBMI function
 double calculateBMI(double weight, double height) {
    return weight / (height * height) ; // TODO: Replace with actual calculation
@@ -20,6 +21,7 @@ double calculateBMI(double weight, double height) {
 //    - 70-79: C
 //    - 60-69: D
 //    - Below 60: F
+
 // TODO: Implement the getGrade function
 String getGrade(int score) {
   // TODO: Add your logic here
@@ -34,7 +36,7 @@ String getGrade(int score) {
   } else {
     return 'F';
   }
-   // TODO: Return appropriate grade
+   
 }
 
 void main() {

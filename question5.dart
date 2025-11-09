@@ -135,7 +135,7 @@ void main() {
   developer.processPayment(developerTotalSalary);
   print('------------------------------------');
 
-  // Report generation for Manager
+  // Report Generation for Manager
   print(manager.generateReport(manager.name, manager.department));
   print('------------------------------------');
 

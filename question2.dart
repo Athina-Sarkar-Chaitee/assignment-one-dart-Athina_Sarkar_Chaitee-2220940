@@ -5,7 +5,9 @@ import 'dart:math';
 
 void main() {
   // 1. Create a List<String> of student names: ["Alice", "Bob", "Charlie", "Diana", "Eve"]
-  // TODO: Create the student names list
+
+  // TODO: Create the student names list.
+  
   final studentNames = <String>["Alice", "Bob", "Charlie", "Diana", "Eve"]; // TODO: Add the student names
 
   // 2. Create a Map<String, int> to store student scores

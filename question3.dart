@@ -8,7 +8,7 @@ class BankAccount { // Savings/Checking
   //    - Initialize all properties
   //    - Set initial balance to 0.0
 
-  // TODO: Implement the constructor
+  // TODO: Implement the constructor.
   BankAccount(this.accountNumber, this.accountHolder, this.accountType) : balance = 0.0;
   // 1. Properties:
   String accountNumber;
@@ -17,7 +17,7 @@ class BankAccount { // Savings/Checking
   String accountType;
   
   // 3. Methods:
-  //    - deposit(double amount): Add money to account
+  //  - deposit(double amount): Add money to account
   // TODO: Implement the deposit method
   void deposit(double amount) {
     // TODO: Add the amount to balance
