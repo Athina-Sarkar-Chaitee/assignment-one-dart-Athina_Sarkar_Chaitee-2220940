@@ -139,9 +139,11 @@ void main() {
   print(manager.generateReport(manager.name, manager.department));
   print('------------------------------------');
 
-  //TODO Display all employee information
+  //TODO Display all employee Info
+
   manager.displayInfo();
-  print('------------------------------------');
+  print('---------------------------------');
   developer.displayInfo();
-  print('------------------------------------');
+  print('---------------------------------');
+
 }
